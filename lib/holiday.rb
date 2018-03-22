@@ -83,9 +83,7 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |season, holiday|
     holiday.each do |event, supplies|
       if event == :fourth_of_july || :memorial_day
-        BBQ = event
-        BBQ = BBQ.to_s
-        BBQ = BBQ.join(",")
+        BBQ = event.map{|string| string.to_s}.split(",")
       end
     end
   end
