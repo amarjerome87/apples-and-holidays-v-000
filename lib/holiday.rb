@@ -87,9 +87,8 @@ def all_holidays_with_bbq(holiday_hash)
         BBQ = event
         BBQ = BBQ.to_s
         BBQ = BBQ.join(",")
-
-        return event
       end
     end
   end
+  return BBQ 
 end
