@@ -85,7 +85,7 @@ def all_holidays_with_bbq(holiday_hash)
     holiday.each do |event, supplies|
       if supplies.include?("BBQ")
         #binding.pry
-        bbq << event.to_s
+        bbq << event
       end
     end
   end
