@@ -86,7 +86,6 @@ def all_holidays_with_bbq(holiday_hash)
 
       if supplies.include?("BBQ")
         #binding.pry
-        bbq = []
         bbq << event.to_s
       end
     end
