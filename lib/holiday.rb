@@ -84,9 +84,8 @@ def all_holidays_with_bbq(holiday_hash)
     holiday.each do |event, supplies|
       if event == :fourth_of_july || :memorial_day
         binding.pry
-
-        bbq = [] 
-        event.map{|string|  string.to_s}
+        bbq = []
+        bbq << event.to_s
       end
     end
   end
